@@ -6,7 +6,7 @@ class Rocket2 extends Phaser.GameObjects.Sprite {
         scene.add.existing(this);   // add to existing, displayList, updateList
         this.isFiring = false;      // track rocket's firing status
         this.moveSpeed = 2;         // pixels per frame
-        this.fireSpeed = 1;
+        this.fireSpeed = 9;
         this.sfxRocket = scene.sound.add('sfx_rocket')  // add rocket sfx
     }
 
@@ -26,12 +26,12 @@ class Rocket2 extends Phaser.GameObjects.Sprite {
         }
         // if fired, move up
         if(this.isFiring && this.y >= borderUISize * 3 + borderPadding) {
-            this.y -= this.moveSpeed;
-            if(keyA.isDown && this.x >= borderUISize + this.width) {
-                this.x -= this.fireSpeed;
-            } else if (keyF.isDown && this.x <= game.config.width - borderUISize - this.width) {
-                this.x += this.fireSpeed;
-            }
+            this.y -= this.fireSpeed;
+            // if(keyA.isDown && this.x >= borderUISize + this.width) {
+            //     this.x -= this.fireSpeed;
+            // } else if (keyD.isDown && this.x <= game.config.width - borderUISize - this.width) {
+            //     this.x += this.fireSpeed;
+            // }
         }
         // reset on miss
         if(this.y <= borderUISize * 3 + borderPadding) {
