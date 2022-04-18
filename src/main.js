@@ -5,7 +5,7 @@
 //created 4 new explosion sfx: 10
 //new spaceship: 20
 //simultaneous two player: 30
-//new weapon:  20
+//new weapon, is the second player:  20
 //Total points: 95
 
 let config = {
