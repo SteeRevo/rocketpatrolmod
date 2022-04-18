@@ -3,9 +3,9 @@
 //speed increase: 5
 //control rocket after fired: 5
 //created 4 new explosion sfx: 10
-//new spaceship: 20
+//new spaceship, smaller, faster, worth more points: 20
 //simultaneous two player: 30
-//new weapon, is the second player:  20
+//new weapon, is the second player, fires faster, cannot be moved:  20
 //Total points: 95
 
 let config = {

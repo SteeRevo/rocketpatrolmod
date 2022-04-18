@@ -75,7 +75,7 @@ class Menu extends Phaser.Scene {
           // Expert mode
           game.settings = {
             spaceshipSpeed: 4,
-
+            speedUp: 30000,  
             gameTimer: 45000    
           }
           this.sound.play('sfx_select');
@@ -85,6 +85,7 @@ class Menu extends Phaser.Scene {
           //two player mode
           game.settings = {
             spaceshipSpeed: 4,
+            speedUp: 30000,  
             gameTimer: 60000    
           }
           this.sound.play('sfx_select');

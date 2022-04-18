@@ -107,6 +107,7 @@ class Play extends Phaser.Scene {
             this.ship01.moveSpeed = 5;
             this.ship02.moveSpeed = 5;
             this.ship03.moveSpeed = 5;
+            this.ship04.moveSpeed = 10;
         }, null, this);
 
     }
