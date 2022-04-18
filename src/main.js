@@ -1,3 +1,13 @@
+//Ethan Nguyen, Rocket Patrol Mod, 4/17/2022, 2 hours
+//Copyright free music : 5
+//speed increase: 5
+//control rocket after fired: 5
+//created 4 new explosion sfx: 10
+//new spaceship: 20
+//simultaneous two player: 30
+//new weapon:  20
+//Total points: 95
+
 let config = {
     type: Phaser.CANVAS,
     width: 640,
